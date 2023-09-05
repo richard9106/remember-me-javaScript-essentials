@@ -76,3 +76,28 @@ function hideCard(peersParents) {
   cardParent1.style.transform = "rotateY(0deg)";
   cardParent2.style.transform = "rotateY(0deg)";
 }
+/**
+ * This function read the value of the cards
+ * and call the  compare function
+ */
+
+let peers = [];
+let peersParents = [];
+
+function turn(element) {
+  let back = element.firstElementChild.innerHTML;
+  element.style.pointerEvents = "none";
+
+  peersParents.push(element);
+  peers.push(back);
+  seeCard(element);
+
+  if (peers.length === 2) {
+    
+    compareCards(peers, peersParents);
+    peers = [];
+    peersParents = [];
+    console.log(peers);
+  } else {
+  }
+}
