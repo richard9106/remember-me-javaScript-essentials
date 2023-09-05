@@ -45,6 +45,37 @@ function createTable() {
   gameArea.innerHTML = cards.join(" ");
 }
 
+
+/**
+ * Add event listener for the botton to
+ * start the game and user name
+ */
+let userName = document.getElementById("nameuser");
+
+document.getElementById("start-game").addEventListener("click", function () {
+  startGame();
+});
+userName.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    startGame();
+  }
+});
+
+/**
+ * this fuction have the condition for the game
+ * can start correctly,explain the rules, ask for name player
+ * and the game can start
+ */
+function startGame() {
+  if (userName.value == "") {
+    userName.focus();
+  } else {
+    createTable();
+    closePopUp();
+    animationCards();
+  }
+}
+
 //turn teh cards when the game is initialized
 
 function animationCards() {
