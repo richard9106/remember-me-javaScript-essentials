@@ -18,6 +18,77 @@ h1 {
   font-size: 3rem;
 }
 
+/*modal window start the game style*/
+#pop-up-container, #win-pop-up {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+#pop-up, .win-container {
+  position: fixed;
+  background-color: rgba(210, 105, 30, 0.829);
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border-radius: 15px;
+  box-shadow: 5px 4px 20px rgb(182, 233, 241);
+  color: white;
+  font-size: larger;
+}
+#pop-up-text > p {
+  font-family: "Sedgwick Ave Display", cursive;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+#pop-up-text > ul {
+  list-style: square;
+  margin: 10px auto;
+}
+#pop-up-input{
+  display: flex;
+  align-items: center;
+}
+
+#pop-up-input > label {
+  margin: 10px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+}
+#nameuser {
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#start-game , #new-game{
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: cadetblue;
+  color: rgb(255, 227, 67);
+  font-size: 25px;
+  font-weight: 600;
+}
+#start-game:hover {
+  transform: scale(0.9);
+  box-shadow: inset 3px 3px 5px white;
+}
+#start-game:active, #new-game:active {
+  transform: scale(0.8);
+}
+
 
 
 /*Header*/
