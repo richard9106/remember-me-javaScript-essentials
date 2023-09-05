@@ -89,6 +89,21 @@ h1 {
   transform: scale(0.8);
 }
 
+/*WIN window style*/
+#win-pop-up{
+  display: none;
+  transform: scale(0.5);
+  transition: all 1s ease-in;
+}
+
+.win-container{
+  text-align: center;
+}
+.win-container > p{
+  color: rgb(167, 226, 77);
+}
+
+
 
 
 /*Header*/
