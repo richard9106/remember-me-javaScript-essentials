@@ -147,3 +147,17 @@ i {
 .scores > span {
   color: chocolate;
 }
+
+
+/*footer style*/
+footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.social-media-icon{
+  width: 100px;
+}
