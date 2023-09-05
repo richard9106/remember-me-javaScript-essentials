@@ -44,3 +44,13 @@ function createTable() {
   }
   gameArea.innerHTML = cards.join(" ");
 }
+
+//turn teh cards when the game is initialized
+
+function animationCards() {
+  let cardfront = document.querySelectorAll("div.card-zone");
+  for (let i = 0; i < cardfront.length; i++) {
+    cardfront[i].classList.add("animation");
+    console.log("hecho");
+  }
+}
