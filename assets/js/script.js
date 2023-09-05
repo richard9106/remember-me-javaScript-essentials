@@ -101,3 +101,40 @@ function turn(element) {
   } else {
   }
 }
+
+/**
+ * comapre betweb tow images
+ * and block the right ones
+ * so they can't be rotated
+ */
+let winCounter=0;//Count the right match
+
+function compareCards(peers, peersParents) {
+  setTimeout(() => {
+    let card1 = peers[0];
+    let card2 = peers[1];
+   
+
+    if (card1 == card2) {
+      console.log("yes son iguales");
+      let cardParent1 = peersParents[0].firstElementChild;
+      let cardParent2 = peersParents[1].firstElementChild;
+      cardParent1.style.backgroundColor = "green";
+      cardParent2.style.backgroundColor = "green";
+      peersParents[0].style.pointerEvents = "none";
+      peersParents[1].style.pointerEvents = "none";
+      winCounter++
+      if(winCounter == 9){
+        winScore();
+        winCounter=0;
+      }
+      console.log(winCounter)
+
+    } else {
+      console.log("noooooo");
+      peersParents[0].style.pointerEvents = "all";
+      peersParents[1].style.pointerEvents = "all";
+      hideCard(peersParents);
+    }
+  }, 800);
+}
