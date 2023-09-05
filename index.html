@@ -19,8 +19,8 @@
     <div id="header">
       <h1>REMEMBER ME</h1>
     </div>
-     <!--Game area, contains the cards with the icons-->  
-     <div id="game-area">
+    <!--Game area, contains the cards with the icons-->
+    <div id="game-area">
       <div class="card-area">
         <div class="card-zone">
           <div class="card back"><i class="fa-solid fa-car fa-xl"></i></div>
@@ -28,16 +28,26 @@
         </div>
       </div>
     </div>
-     <!--restart button in case you can't win-->  
-     <div class="restart-button">
+    <!--restart button in case you can't win-->
+    <div class="restart-button">
       <button id="restart-game">I Give Up!!</button>
     </div>
+    <!--Information about the game, score, name player and defeats-->
+    <section id="info-game">
+      <div id="user-area">
+        <img
+          src="./assets/images/noUser.png"
+          id="player-image"
+          alt="user image"
+        />
+        <p id="name-player">Name user</p>
+      </div>
 
-
-
-
-
-
+      <div class="score-area">
+        <p class="scores">victories: <span id="win">0</span></p>
+        <p class="scores">defeats: <span id="lose">0</span></p>
+      </div>
+    </section>
 
     <!--Font awesome script -->
     <script
