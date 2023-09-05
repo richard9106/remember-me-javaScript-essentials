@@ -1,3 +1,6 @@
+//load the game when the page it's completely load
+
+window.addEventListener("load", createTable);
 
 
 /**
