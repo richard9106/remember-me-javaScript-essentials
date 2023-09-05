@@ -86,6 +86,16 @@ function animationCards() {
   }
 }
 
+//close the modal window to start the game
+function closePopUp() {
+  document.getElementById("name-player").innerText = userName.value;
+  let popUp = document.getElementById("pop-up");
+  let popUpContainer = document.getElementById("pop-up-container");
+  popUp.style.display = "none";
+  popUpContainer.style.display = "none";
+}
+
+
 /**
  * This function rotate the
  * card so you can see the image behind
