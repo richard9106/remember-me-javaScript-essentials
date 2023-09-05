@@ -54,3 +54,25 @@ function animationCards() {
     console.log("hecho");
   }
 }
+
+/**
+ * This function rotate the
+ * card so you can see the image behind
+ */
+
+function seeCard(event) {
+  if (event.style.transform != "rotateY(180deg)") {
+    event.style.transform = "rotateY(180deg)";
+  }
+}
+
+/**
+ * This function Hide the image behind if
+ * there are not iqual
+ */
+function hideCard(peersParents) {
+  let cardParent1 = peersParents[0];
+  let cardParent2 = peersParents[1];
+  cardParent1.style.transform = "rotateY(0deg)";
+  cardParent2.style.transform = "rotateY(0deg)";
+}
