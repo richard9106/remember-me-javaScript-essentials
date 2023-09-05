@@ -15,29 +15,36 @@
     <title>Remember Meee!</title>
   </head>
   <body>
-  <!--Pop up window, appears when the web page is loaded-->  
-  <div id="pop-up-container">
-    <div id="pop-up">
-      <div id="pop-up-text">
-        <p>RULES</p>
-        <ul>
-          <li>To start the game the player must write their name</li>
-          <li>The cards will be turned four seconds before each game.</li>
-          <li>To win you must find all the pairs</li>
-          <li>It is not allowed to pick up more than two cards in a row.</li>
-          <li>If the player can't continue they can give up.</li>
-        </ul>
-      </div>
-      <div id="pop-up-input">
-        <label for="nameuser">Player Name</label>
-        <input type="text" id="nameuser" placeholder="Your name" required />
-      </div>
-      <div id="pop-up-button">
-        <button id="start-game">Let's Play</button>
+    <!--Pop up window, appears when the web page is loaded-->
+    <div id="pop-up-container">
+      <div id="pop-up">
+        <div id="pop-up-text">
+          <p>RULES</p>
+          <ul>
+            <li>To start the game the player must write their name</li>
+            <li>The cards will be turned four seconds before each game.</li>
+            <li>To win you must find all the pairs</li>
+            <li>It is not allowed to pick up more than two cards in a row.</li>
+            <li>If the player can't continue they can give up.</li>
+          </ul>
+        </div>
+        <div id="pop-up-input">
+          <label for="nameuser">Player Name</label>
+          <input type="text" id="nameuser" placeholder="Your name" required />
+        </div>
+        <div id="pop-up-button">
+          <button id="start-game">Let's Play</button>
+        </div>
       </div>
     </div>
-  </div>
-
+    
+    <!--Pop up window appears when the player win the game-->
+    <div id="win-pop-up">
+      <div class="win-container">
+        <p>Congratulations you have found all the pairs</p>
+        <button id="new-game">New Game</button>
+      </div>
+    </div>
 
     <!--Game Title -->
     <div id="header">
@@ -73,24 +80,30 @@
       </div>
     </section>
 
-      <!--Footer with Social media icons and Help button to explain the rules-->
-      <footer>
-        <div id="help-button">
-          <i class="fa-solid fa-circle-question fa-2xl" style="color: #e4740c"></i>
-        </div>
-        <div>
-          <a href="http://www.facebook.com" target="_blank" class="social-media-icon"
-            ><i class="fa-brands fa-facebook fa-2xl " style="color: #50a1d3"></i
-          ></a>
-  
-          <a href="http://www.instagram.com" target="_blank">
-            <i
-              class="fa-brands fa-square-instagram fa-2xl"
-              style="color: #dc2e2e"
-            ></i
-          ></a>
-        </div>
-      </footer>
+    <!--Footer with Social media icons and Help button to explain the rules-->
+    <footer>
+      <div id="help-button">
+        <i
+          class="fa-solid fa-circle-question fa-2xl"
+          style="color: #e4740c"
+        ></i>
+      </div>
+      <div>
+        <a
+          href="http://www.facebook.com"
+          target="_blank"
+          class="social-media-icon"
+          ><i class="fa-brands fa-facebook fa-2xl" style="color: #50a1d3"></i
+        ></a>
+
+        <a href="http://www.instagram.com" target="_blank">
+          <i
+            class="fa-brands fa-square-instagram fa-2xl"
+            style="color: #dc2e2e"
+          ></i
+        ></a>
+      </div>
+    </footer>
 
     <!--Font awesome script -->
     <script
