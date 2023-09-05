@@ -15,6 +15,30 @@
     <title>Remember Meee!</title>
   </head>
   <body>
+  <!--Pop up window, appears when the web page is loaded-->  
+  <div id="pop-up-container">
+    <div id="pop-up">
+      <div id="pop-up-text">
+        <p>RULES</p>
+        <ul>
+          <li>To start the game the player must write their name</li>
+          <li>The cards will be turned four seconds before each game.</li>
+          <li>To win you must find all the pairs</li>
+          <li>It is not allowed to pick up more than two cards in a row.</li>
+          <li>If the player can't continue they can give up.</li>
+        </ul>
+      </div>
+      <div id="pop-up-input">
+        <label for="nameuser">Player Name</label>
+        <input type="text" id="nameuser" placeholder="Your name" required />
+      </div>
+      <div id="pop-up-button">
+        <button id="start-game">Let's Play</button>
+      </div>
+    </div>
+  </div>
+
+
     <!--Game Title -->
     <div id="header">
       <h1>REMEMBER ME</h1>
