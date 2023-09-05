@@ -107,3 +107,43 @@ i {
 #restart-game:active {
   transform: scale(0.9);
 }
+
+
+/*Info game area */
+#info-game {
+  margin: 20px auto 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#info-game > div {
+  flex: 0 0 calc(50% - 10px);
+}
+
+#user-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#player-image {
+  width: 200px;
+  border-radius: 50% 50%;
+}
+#name-player {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 30px;
+  color: chocolate;
+  letter-spacing: 3px;
+}
+.scores {
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  color: rgb(51, 92, 94);
+}
+.scores > span {
+  color: chocolate;
+}
