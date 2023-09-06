@@ -150,6 +150,9 @@ h1 {
     overflow-y: scroll;
     font-size: 20px;
   }
+  .loser-text{
+    font-size: 25px;
+  }
 }
 
 /*WIN window style*/
@@ -425,3 +428,14 @@ footer {
 .social-media-icon {
   width: 100px;
 }
+#help-button{
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 50% 50%;
+  cursor: pointer;
+}
+
