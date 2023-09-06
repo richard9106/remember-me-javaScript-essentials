@@ -176,13 +176,34 @@ function compareCards(peers, peersParents) {
 }
 
 /**
+ * this function it a timer
+ * when the time  is up
+ * you lose the game
+ */
+let timer;
+function timerCountdown() {
+  let number = document.querySelector("#timer-container > span").textContent;
+   timer = setInterval(() => {
+    document.querySelector("#timer-container > span").textContent=number;
+    number--;
+    if (number < 0) {
+      defeatScore();
+      youLose();
+      document.querySelector("#timer-container > span").textContent="25"
+      clearInterval(timer);
+    }
+  }, 1000);
+}
+
+
+/**
  * this function reestart the game if
  * the player can't finish
  */
 document.getElementById("restart-game").addEventListener("click", function () {
-  createTable();
-  animationCards();
   defeatScore();
+  clearInterval(timer);
+  youLose()
 });
 /**
  * This funtion restart the ame after winning
@@ -192,6 +213,7 @@ document.getElementById("new-game").addEventListener("click", function () {
   document.getElementById("win-pop-up").style.transform = "scale(0.5)";
   createTable();
   animationCards();
+  timerCountdown()
 });
 
 // this function increase the defeats score
@@ -206,22 +228,24 @@ function winScore() {
   let winScore = parseInt(document.getElementById("win").innerText);
   document.getElementById("win").innerText = ++winScore;
   document.getElementById("win-pop-up").style.display = "block";
-  document.getElementById("win-pop-up").style.transform = "scale(1)";
+  clearInterval(timer);
 }
 
+//This function will open a pop up window when the timer ended
+function youLose() {
+  document.getElementById("lose-pop-up").style.display = "block";
+  winCounter=0;
+}
 /**
- * this function it a timer
- * when the time  is up
- * you lose the game
+ * This funtion restart the ame after you lose the game
+ * because the timer ended
  */
+document.getElementById("try-again").addEventListener("click", function () {
+  document.getElementById("lose-pop-up").style.display = "none";
+  document.querySelector("#timer-container > span").textContent="25"
+  createTable();
+  animationCards();
+  timerCountdown()
+});
 
-function timerCountdown() {
-  let number = document.querySelector("#timer-container > span").textContent;
-  const timer = setInterval(() => {
-    document.querySelector("#timer-container > span").textContent=number;
-    number--;
-    if (number < 0) {
-      clearInterval(timer);
-    }
-  }, 1000);
-}
+
