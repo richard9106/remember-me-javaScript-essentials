@@ -2,7 +2,6 @@
 
 window.addEventListener("load", createTable);
 
-
 /**
  * load icons to use in the game
  * create a icons variable to help us.
@@ -44,7 +43,6 @@ function createTable() {
   }
   gameArea.innerHTML = cards.join(" ");
 }
-
 
 /**
  * Add event listener for the botton to
@@ -95,7 +93,6 @@ function closePopUp() {
   popUpContainer.style.display = "none";
 }
 
-
 /**
  * This function rotate the
  * card so you can see the image behind
@@ -134,7 +131,6 @@ function turn(element) {
   seeCard(element);
 
   if (peers.length === 2) {
-    
     compareCards(peers, peersParents);
     peers = [];
     peersParents = [];
@@ -148,13 +144,12 @@ function turn(element) {
  * and block the right ones
  * so they can't be rotated
  */
-let winCounter=0;//Count the right match
+let winCounter = 0; //Count the right match
 
 function compareCards(peers, peersParents) {
   setTimeout(() => {
     let card1 = peers[0];
     let card2 = peers[1];
-   
 
     if (card1 == card2) {
       console.log("yes son iguales");
@@ -164,13 +159,12 @@ function compareCards(peers, peersParents) {
       cardParent2.style.backgroundColor = "green";
       peersParents[0].style.pointerEvents = "none";
       peersParents[1].style.pointerEvents = "none";
-      winCounter++
-      if(winCounter == 9){
+      winCounter++;
+      if (winCounter == 9) {
         winScore();
-        winCounter=0;
+        winCounter = 0;
       }
-      console.log(winCounter)
-
+      console.log(winCounter);
     } else {
       console.log("noooooo");
       peersParents[0].style.pointerEvents = "all";
@@ -181,50 +175,53 @@ function compareCards(peers, peersParents) {
 }
 
 /**
- * this function reestart the game if 
- * the player can't finish 
+ * this function reestart the game if
+ * the player can't finish
  */
-document.getElementById("restart-game").addEventListener("click", function(){
+document.getElementById("restart-game").addEventListener("click", function () {
   createTable();
   animationCards();
   defeatScore();
-})
+});
 /**
  * This funtion restart the ame after winning
  */
-document.getElementById("new-game").addEventListener("click", function(){
-  document.getElementById("win-pop-up").style.display="none";
-  document.getElementById("win-pop-up").style.transform="scale(0.5)";
+document.getElementById("new-game").addEventListener("click", function () {
+  document.getElementById("win-pop-up").style.display = "none";
+  document.getElementById("win-pop-up").style.transform = "scale(0.5)";
   createTable();
   animationCards();
-})
+});
 
 // this function increase the defeats score
 
-function defeatScore(){
-  let loseScore= parseInt(document.getElementById("lose").innerText);
-  document.getElementById("lose").innerText= ++loseScore;
+function defeatScore() {
+  let loseScore = parseInt(document.getElementById("lose").innerText);
+  document.getElementById("lose").innerText = ++loseScore;
 }
 
 // this funtion increase the wins score
-function winScore(){
-  let winScore= parseInt(document.getElementById("win").innerText);
-  document.getElementById("win").innerText= ++winScore;
-  document.getElementById("win-pop-up").style.display="block";
-  document.getElementById("win-pop-up").style.transform="scale(1)";
+function winScore() {
+  let winScore = parseInt(document.getElementById("win").innerText);
+  document.getElementById("win").innerText = ++winScore;
+  document.getElementById("win-pop-up").style.display = "block";
+  document.getElementById("win-pop-up").style.transform = "scale(1)";
 }
 
 /**
- * this function it a timer 
+ * this function it a timer
  * when the time  is up
  * you lose the game
  */
-number = 25;
 
-const timer = setInterval(()=>{
-    console.log(number);
+function timerCountdown() {
+  let number = document.querySelector("#timer-container > span").textContent;
+  const timer = setInterval(() => {
+    document.querySelector("#timer-container > span").textContent=number;
     number--;
-    if(number == 0){
-        clearInterval(timer);
+    if (number < 0) {
+      clearInterval(timer);
     }
-},1000);
+  }, 1000);
+}
+timerCountdown();
