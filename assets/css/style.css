@@ -19,7 +19,8 @@ h1 {
 }
 
 /*modal window start the game style*/
-#pop-up-container, #win-pop-up {
+#pop-up-container,
+#win-pop-up {
   position: fixed;
   left: 0;
   top: 0;
@@ -28,7 +29,8 @@ h1 {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
-#pop-up, .win-container {
+#pop-up,
+.win-container {
   position: fixed;
   background-color: rgba(210, 105, 30, 0.829);
   display: grid;
@@ -56,7 +58,7 @@ h1 {
   list-style: square;
   margin: 10px auto;
 }
-#pop-up-input{
+#pop-up-input {
   display: flex;
   align-items: center;
 }
@@ -72,7 +74,8 @@ h1 {
   border-radius: 5px;
 }
 
-#start-game , #new-game{
+#start-game,
+#new-game {
   width: 200px;
   height: 50px;
   border-radius: 10px;
@@ -85,7 +88,8 @@ h1 {
   transform: scale(0.9);
   box-shadow: inset 3px 3px 5px white;
 }
-#start-game:active, #new-game:active {
+#start-game:active,
+#new-game:active {
   transform: scale(0.8);
 }
 
@@ -99,7 +103,7 @@ h1 {
 }
 @media (max-width: 480px) {
   #pop-up-input {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -118,23 +122,19 @@ h1 {
   }
 }
 
-
 /*WIN window style*/
-#win-pop-up{
+#win-pop-up {
   display: none;
   transform: scale(0.5);
   transition: all 1s ease-in;
 }
 
-.win-container{
+.win-container {
   text-align: center;
 }
-.win-container > p{
+.win-container > p {
   color: rgb(167, 226, 77);
 }
-
-
-
 
 /*Header*/
 #header {
@@ -204,6 +204,83 @@ i {
   }
 }
 
+/*GAME AREA RESPONSIVE DESIGN*/
+@media (max-width: 1280px) {
+  #game-area {
+    width: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  #game-area {
+    width: 85%;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  }
+  .card-area,
+  .card-zone,
+  .card {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 768px) {
+  #game-area {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  .card-area,
+  .card-zone,
+  .card {
+    width: 180px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  #game-area {
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .card-area,
+  .card-zone,
+  .card {
+    width: 120px;
+    height: 80px;
+    border-radius: 0;
+  }
+  .card {
+    font-size: 120%;
+  }
+}
+@media (max-width: 412px) {
+  #game-area {
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .card-area,
+  .card-zone,
+  .card {
+    width: 100px;
+    height: 80px;
+    border-radius: 0;
+  }
+  .card {
+    font-size: 120%;
+  }
+}
+@media (max-width: 320px) {
+  #game-area {
+    width: 95%;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+  .card-area,
+  .card-zone,
+  .card {
+    width: 80px;
+    height: 50px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
 
 /*Restar button style GIVE UP!!*/
 .restart-button {
@@ -223,7 +300,6 @@ i {
 #restart-game:active {
   transform: scale(0.9);
 }
-
 
 /*Info game area */
 #info-game {
@@ -264,7 +340,6 @@ i {
   color: chocolate;
 }
 
-
 /*footer style*/
 footer {
   padding: 30px;
@@ -274,6 +349,6 @@ footer {
   text-align: center;
 }
 
-.social-media-icon{
+.social-media-icon {
   width: 100px;
 }
