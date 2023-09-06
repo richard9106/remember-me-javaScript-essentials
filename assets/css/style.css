@@ -18,9 +18,36 @@ h1 {
   font-size: 3rem;
 }
 
+/*loser style*/
+#lose-pop-up{
+  display: none;
+}
+
+.loser-text{
+   font-family: "Sedgwick Ave Display", cursive;
+   font-size: 50px;
+   color: red;
+   text-shadow: white 2px 3px 3px;
+   animation: scale 2s ease-in-out;
+}
+@keyframes scale{
+  0%{
+    scale:0;
+  }
+  50%{
+    scale:1.5;
+  }
+  100%{
+    scale:1;
+  }
+}
+
+
+
 /*modal window start the game style*/
 #pop-up-container,
-#win-pop-up {
+#win-pop-up,
+#lose-pop-up {
   position: fixed;
   left: 0;
   top: 0;
@@ -30,7 +57,8 @@ h1 {
   z-index: 10;
 }
 #pop-up,
-.win-container {
+.win-container,
+.lose-container {
   position: fixed;
   background-color: rgba(210, 105, 30, 0.829);
   display: grid;
@@ -75,6 +103,7 @@ h1 {
 }
 
 #start-game,
+#try-again,
 #new-game {
   width: 200px;
   height: 50px;
@@ -84,12 +113,13 @@ h1 {
   font-size: 25px;
   font-weight: 600;
 }
-#start-game:hover {
+#start-game:hover,#try-again:hover {
   transform: scale(0.9);
   box-shadow: inset 3px 3px 5px white;
 }
 #start-game:active,
-#new-game:active {
+#new-game:active,
+#try-again:active {
   transform: scale(0.8);
 }
 
@@ -126,7 +156,7 @@ h1 {
 #win-pop-up {
   display: none;
   transform: scale(0.5);
-  transition: all 1s ease-in;
+  transition: all 2s ease-in;
 }
 
 .win-container {
