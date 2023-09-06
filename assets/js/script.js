@@ -198,3 +198,18 @@ document.getElementById("new-game").addEventListener("click", function(){
   createTable();
   animationCards();
 })
+
+// this function increase the defeats score
+
+function defeatScore(){
+  let loseScore= parseInt(document.getElementById("lose").innerText);
+  document.getElementById("lose").innerText= ++loseScore;
+}
+
+// this funtion increase the wins score
+function winScore(){
+  let winScore= parseInt(document.getElementById("win").innerText);
+  document.getElementById("win").innerText= ++winScore;
+  document.getElementById("win-pop-up").style.display="block";
+  document.getElementById("win-pop-up").style.transform="scale(1)";
+}
