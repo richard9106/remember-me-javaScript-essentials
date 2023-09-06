@@ -281,6 +281,16 @@ i {
     font-size: 25px;
   }
 }
+/*Timer Countdown*/
+#timer-container{
+  margin: 20px auto;
+  width: 100px;
+  padding: 20px;
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 40px;
+}
 
 /*Restar button style GIVE UP!!*/
 .restart-button {
