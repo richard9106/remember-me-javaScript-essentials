@@ -267,7 +267,11 @@ i {
   }
 }
 @media (max-width: 320px) {
+  #header{
+    margin: 10px auto;
+  }
   #game-area {
+    margin: 0 auto;
     width: 95%;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   }
@@ -279,13 +283,14 @@ i {
   }
   h1 {
     font-size: 25px;
+    margin: 0;
   }
 }
 /*Timer Countdown*/
 #timer-container{
   margin: 20px auto;
   width: 100px;
-  padding: 20px;
+  padding: 10px;
   border: 2px solid chocolate;
   border-radius: 10px;
   text-align: center;
