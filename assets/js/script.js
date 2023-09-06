@@ -179,3 +179,22 @@ function compareCards(peers, peersParents) {
     }
   }, 800);
 }
+
+/**
+ * this function reestart the game if 
+ * the player can't finish 
+ */
+document.getElementById("restart-game").addEventListener("click", function(){
+  createTable();
+  animationCards();
+  defeatScore();
+})
+/**
+ * This funtion restart the ame after winning
+ */
+document.getElementById("new-game").addEventListener("click", function(){
+  document.getElementById("win-pop-up").style.display="none";
+  document.getElementById("win-pop-up").style.transform="scale(0.5)";
+  createTable();
+  animationCards();
+})
