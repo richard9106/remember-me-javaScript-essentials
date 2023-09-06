@@ -213,3 +213,18 @@ function winScore(){
   document.getElementById("win-pop-up").style.display="block";
   document.getElementById("win-pop-up").style.transform="scale(1)";
 }
+
+/**
+ * this function it a timer 
+ * when the time  is up
+ * you lose the game
+ */
+number = 25;
+
+const timer = setInterval(()=>{
+    console.log(number);
+    number--;
+    if(number == 0){
+        clearInterval(timer);
+    }
+},1000);
