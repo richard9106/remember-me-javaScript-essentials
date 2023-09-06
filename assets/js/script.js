@@ -71,6 +71,7 @@ function startGame() {
     createTable();
     closePopUp();
     animationCards();
+    timerCountdown();
   }
 }
 
@@ -224,4 +225,3 @@ function timerCountdown() {
     }
   }, 1000);
 }
-timerCountdown();
