@@ -301,6 +301,14 @@ i {
   transform: scale(0.9);
 }
 
+/*Restart button RESPONSIVE design*/
+@media (max-width:320px){
+  #restart-game{
+    width: 95%;
+    font-size: 15px;
+  }
+}
+
 /*Info game area */
 #info-game {
   margin: 20px auto 0;
