@@ -228,7 +228,9 @@ function winScore() {
   let winScore = parseInt(document.getElementById("win").innerText);
   document.getElementById("win").innerText = ++winScore;
   document.getElementById("win-pop-up").style.display = "block";
+  document.getElementById("win-pop-up").style.transform = "scale(1)";
   clearInterval(timer);
+  document.querySelector("#timer-container > span").textContent="30"
 }
 
 //This function will open a pop up window when the timer ended
