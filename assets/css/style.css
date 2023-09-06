@@ -302,8 +302,8 @@ i {
 }
 
 /*Restart button RESPONSIVE design*/
-@media (max-width:320px){
-  #restart-game{
+@media (max-width: 320px) {
+  #restart-game {
     width: 95%;
     font-size: 15px;
   }
@@ -346,6 +346,26 @@ i {
 }
 .scores > span {
   color: chocolate;
+}
+
+/*Info game RESPONSIVE design*/
+@media (max-width: 768px) {
+  #info-game {
+    flex-direction: column;
+  }
+  #player-image {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  #user-area {
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .scores {
+    font-size: 15px;
+  }
 }
 
 /*footer style*/
