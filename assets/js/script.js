@@ -189,7 +189,7 @@ function timerCountdown() {
     if (number < 0) {
       defeatScore();
       youLose();
-      document.querySelector("#timer-container > span").textContent="25"
+      document.querySelector("#timer-container > span").textContent="30"
       clearInterval(timer);
     }
   }, 1000);
@@ -242,7 +242,8 @@ function youLose() {
  */
 document.getElementById("try-again").addEventListener("click", function () {
   document.getElementById("lose-pop-up").style.display = "none";
-  document.querySelector("#timer-container > span").textContent="25"
+  document.querySelector("#timer-container > span").textContent="30"
+  winCounter=0;
   createTable();
   animationCards();
   timerCountdown()
