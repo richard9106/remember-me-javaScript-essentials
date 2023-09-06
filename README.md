@@ -1,5 +1,17 @@
 # JavaScript Essentials
 
+External user’s goal:
+
+The application user wants to glean insights from survey results.
+Site owner's goal:
+
+The application should provide actionable insights from an inputted dataset.
+Potential features to include:
+
+Import survey results from the terminal, structured data file or similar.
+Parse and analyse the data
+Export the results to an appropriate file
+
 In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
 
 For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers. 
