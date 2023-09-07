@@ -1,46 +1,46 @@
-# JavaScript Essentials
+# Project 2 JavaScript Essentials
+# Remember Meee! Game
 
-External user’s goal:
+Remember mee! is an app that is designed to improve the short-term memory of users, both children and adults, it is a game that consists of a playing area with cards, of which you must find the pair of each card.
 
-The application user wants to glean insights from survey results.
-Site owner's goal:
+### External user’s goal:
 
-The application should provide actionable insights from an inputted dataset.
-Potential features to include:
+The application user (Kids) wants to kill time with funny games such as memmory game Remember Meee!.
 
-Import survey results from the terminal, structured data file or similar.
-Parse and analyse the data
-Export the results to an appropriate file
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+### Site owner's goal:
 
-For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers. 
+The application should improve your cognitive skills, short term memory  and facets such as attention, creativity and visual ability.
 
-![Responsice Mockup](media/love_maths_mockup.png)
+
+
+
+
+![Responsice Mockup](./assets/images/responsice%20mokup.png)
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+This game consists of two main features, firstly a game area in which the cards to be matched are found and secondly the points area where you can see the player's defeats and victories
 
 ### Existing Features
 
-- __The Love Maths Logo and Heading__
+- __The Remember mee! Heading and game area__
 
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
+  - Featured at the center of the page, the Remember mee! title and the game area is easy to see for the user. The user will be able to see the name of the game and be able to play.
 
-![Logo](media/love_maths_logo.png)
+![Game Area](./assets/images/pc2.jpg)
 
 - __The Game Area__
 
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
+  - This section will allow the user to play the memory game. The user will be able to easily see cards for 4 seconds and them they have to find each pair possible before the time runs out.
+  - The user will be able to give up if they want to. 
 
-![Game](media/love_maths_icons.png)
+![timer](./assets/images/countdown.jpg)
 
-- __The Question section__
+- __Countdown and Give up button__
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
+  - The user only have 30 seconds to find all pairs for that there is a timer.
+  - The user will be able to give up, this is in case the user was not paying attention and didn't see the cards when the game started. 
 
 ![Question](media/love_maths_question.png)
 
