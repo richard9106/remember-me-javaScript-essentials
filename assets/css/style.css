@@ -5,7 +5,6 @@
   transition: all 0.5s;
 }
 body {
-  perspective: 1000;
   z-index: 1000;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -21,17 +20,8 @@ h1 {
 }
 
 /*loser style*/
-#lose-pop-up{
-  display: none;
-}
 
-.loser-text{
-   font-family: "Sedgwick Ave Display", cursive;
-   font-size: 50px;
-   color: red;
-   text-shadow: white 2px 3px 3px;
-   animation: scale 2s ease-in-out;
-}
+
 @keyframes scale{
   0%{
     scale:0;
@@ -43,7 +33,17 @@ h1 {
     scale:1;
   }
 }
+#lose-pop-up{
+  display: none;
+}
 
+.loser-text{
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 50px;
+  color: red;
+  text-shadow: white 2px 3px 3px;
+  animation: scale 2s ease-in-out;
+}
 
 
 /*modal window start the game style*/
