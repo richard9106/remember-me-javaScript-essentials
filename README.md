@@ -24,39 +24,42 @@ This game consists of two main features, firstly a game area in which the cards 
 
 ### Existing Features
 
-- __The Remember mee! Heading and game area__
+ __The Remember mee! Heading and game area__
 
   - Featured at the center of the page, the Remember mee! title and the game area is easy to see for the user. The user will be able to see the name of the game and be able to play.
 
 ![Game Area](./assets/images/pc2.jpg)
 
-- __The Game Area__
+__The Game Area__
 
   - This section will allow the user to play the memory game. The user will be able to easily see cards for 4 seconds and them they have to find each pair possible before the time runs out.
   - The user will be able to give up if they want to. 
 
 ![timer](./assets/images/countdown.jpg)
 
-- __Countdown and Give up button__
+ __Countdown and Give up button__
 
   - The user only have 30 seconds to find all pairs for that there is a timer.
   - The user will be able to give up, this is in case the user was not paying attention and didn't see the cards when the game started. 
 
-![Question](media/love_maths_question.png)
+<center>
 
-- __The Score Area__
+![User information](./assets/images/movile5.jpg)
 
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
+</center>
 
-![score](media/love_maths_answer.png)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+__Info Game__
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- When the game starts it asks for the player's name so in this section will apear the name.
+
+- Also you have a victories and defeats score so you can see how many game you have win or losed.
 
 ### Features Left to Implement
 
-- Another feature idea
+- level selector, so you can choose a harder or easier level depending on your ability
+
+
 
 ## Testing 
 
