@@ -404,6 +404,7 @@ i {
   }
   #player-image {
     width: 150px;
+    height: 150px;
   }
 }
 @media (max-width: 480px) {
