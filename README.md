@@ -249,3 +249,7 @@ Congratulations on completing your Readme, you have made another big stride in t
 ## Project screenshots
 
 ![responsiveness Iphones](./assets/images/iphonesAndMac.jpg)
+![page 1](./assets/images/page1.jpg)
+![page 2](./assets/images/page2.jpg)
+![page 3](./assets/images/page3.jpg)
+![page 4](./assets/images/page4.jpg)
