@@ -6,7 +6,7 @@ window.addEventListener("load", createTable);
  * load icons to use in the game
  * create a icons variable to help us.
  */
-var icons;
+let icons;
 function loadIcons() {
   icons = [
     '<i class="fa-solid fa-gift fa-xl"></i>',
@@ -25,10 +25,10 @@ function loadIcons() {
  */
 function createTable() {
   loadIcons();
-  var gameArea = document.getElementById("game-area");
-  var cards = [];
+  let gameArea = document.getElementById("game-area");
+  let cards = [];
 
-  for (var i = 0; i < 18; i++) {
+  for (let i = 0; i < 18; i++) {
     cards.push(` 
       <div class="card-area"  >
         <div class="card-zone" onclick="turn(this)" >
@@ -48,8 +48,7 @@ function createTable() {
  * Add event listener for the botton to
  * start the game and user name
  */
-var userName = document.getElementById("nameuser");
-
+let userName = document.getElementById("nameuser");
 document.getElementById("start-game").addEventListener("click", function () {
   startGame();
 });
@@ -71,15 +70,28 @@ function startGame() {
     createTable();
     closePopUp();
     animationCards();
-    timerCountdown();
+    noClick();
+    setTimeout(() => {
+      timerCountdown();
+    }, 3500);
   }
+}
+/**
+ * This function does not allow the user to click until the cards are hidden.
+ */
+function noClick() {
+  let body = document.querySelector("body");
+  body.style = "pointer-events:none";
+  setTimeout(() => {
+    body.style = "pointer-events:all";
+  }, 3500);
 }
 
 //turn teh cards when the game is initialized
 
 function animationCards() {
-  var cardfront = document.querySelectorAll("div.card-zone");
-  for (var i = 0; i < cardfront.length; i++) {
+  let cardfront = document.querySelectorAll("div.card-zone");
+  for (let i = 0; i < cardfront.length; i++) {
     cardfront[i].classList.add("animation");
   }
 }
@@ -87,12 +99,36 @@ function animationCards() {
 //close the modal window to start the game
 function closePopUp() {
   document.getElementById("name-player").innerText = userName.value;
-  var popUp = document.getElementById("pop-up");
-  var popUpContainer = document.getElementById("pop-up-container");
-  popUp.style.display = "none";
+  let popUpContainer = document.getElementById("pop-up-container");
   popUpContainer.style.display = "none";
 }
 
+/**
+ * This function read the value of the cards
+ * and call the  compare function
+ */
+
+let peers = []; //array whit card back face
+let peersParents = []; // array whit card container
+
+function turn(element) {
+  let back = element.firstElementChild.innerHTML;
+  element.style.pointerEvents = "none";
+  peersParents.push(element);
+  peers.push(back);
+  seeCard(element);
+
+  if (peers.length === 2) {
+    let body = document.querySelector("body");
+    body.style = "pointer-events:none";
+    setTimeout(() => {
+      body.style = "pointer-events:all";
+    }, 1000);
+    compareCards(peers, peersParents);
+    peers = [];
+    peersParents = [];
+  }
+}
 /**
  * This function rotate the
  * card so you can see the image behind
@@ -109,32 +145,10 @@ function seeCard(event) {
  * there are not iqual
  */
 function hideCard(peersParents) {
-  var cardParent1 = peersParents[0];
-  var cardParent2 = peersParents[1];
+  let cardParent1 = peersParents[0];
+  let cardParent2 = peersParents[1];
   cardParent1.style.transform = "rotateY(0deg)";
   cardParent2.style.transform = "rotateY(0deg)";
-}
-/**
- * This function read the value of the cards
- * and call the  compare function
- */
-
-var peers = [];
-var peersParents = [];
-
-function turn(element) {
-  var back = element.firstElementChild.innerHTML;
-  element.style.pointerEvents = "none";
-
-  peersParents.push(element);
-  peers.push(back);
-  seeCard(element);
-
-  if (peers.length === 2) {
-    compareCards(peers, peersParents);
-    peers = [];
-    peersParents = [];
-  } 
 }
 
 /**
@@ -142,27 +156,27 @@ function turn(element) {
  * and block the right ones
  * so they can't be rotated
  */
-var winCounter = 0; //Count the right match
+let winCounter = 0; //Count the right match
 
 function compareCards(peers, peersParents) {
   setTimeout(() => {
-    var card1 = peers[0];
-    var card2 = peers[1];
+    let card1 = peers[0];
+    let card2 = peers[1];
 
     if (card1 == card2) {
-      var cardParent1 = peersParents[0].firstElementChild;
-      var cardParent2 = peersParents[1].firstElementChild;
+      let cardParent1 = peersParents[0].firstElementChild;
+      let cardParent2 = peersParents[1].firstElementChild;
       cardParent1.style.backgroundColor = "green";
       cardParent2.style.backgroundColor = "green";
       peersParents[0].style.pointerEvents = "none";
       peersParents[1].style.pointerEvents = "none";
       winCounter++;
+
       if (winCounter == 9) {
-        winScore();
         winCounter = 0;
+        winScore();
       }
     } else {
-      console.log("noooooo");
       peersParents[0].style.pointerEvents = "all";
       peersParents[1].style.pointerEvents = "all";
       hideCard(peersParents);
@@ -175,21 +189,21 @@ function compareCards(peers, peersParents) {
  * when the time  is up
  * you lose the game
  */
-var timer;
+let timer;
 function timerCountdown() {
-  var number = document.querySelector("#timer-container > span").textContent;
-   timer = setInterval(() => {
-    document.querySelector("#timer-container > span").textContent=number;
+  let number = document.querySelector("#timer-container > span").textContent;
+
+  timer = setInterval(() => {
+    document.querySelector("#timer-container > span").textContent = number;
     number--;
     if (number < 0) {
       defeatScore();
       youLose();
-      document.querySelector("#timer-container > span").textContent="30";
+      document.querySelector("#timer-container > span").textContent = "30";
       clearInterval(timer);
     }
   }, 1000);
 }
-
 
 /**
  * this function reestart the game if
@@ -201,37 +215,44 @@ document.getElementById("restart-game").addEventListener("click", function () {
   youLose();
 });
 /**
- * This funtion restart the ame after winning
+ * This funtion restart the game after winning
  */
 document.getElementById("new-game").addEventListener("click", function () {
   document.getElementById("win-pop-up").style.display = "none";
   document.getElementById("win-pop-up").style.transform = "scale(0.5)";
+  cardCounterRotate = 0;
   createTable();
   animationCards();
-  timerCountdown();
+  noClick();
+  setTimeout(() => {
+    timerCountdown();
+  }, 3500);
 });
 
 // this function increase the defeats score
 
 function defeatScore() {
-  var loseScore = parseInt(document.getElementById("lose").innerText);
+  let loseScore = parseInt(document.getElementById("lose").innerText);
   document.getElementById("lose").innerText = ++loseScore;
 }
 
 // this funtion increase the wins score
 function winScore() {
-  var winScore = parseInt(document.getElementById("win").innerText);
+  //incrementa el score
+  let winScore = parseInt(document.getElementById("win").innerText);
   document.getElementById("win").innerText = ++winScore;
+  // show win pop up
   document.getElementById("win-pop-up").style.display = "block";
   document.getElementById("win-pop-up").style.transform = "scale(1)";
+  // stop the timer and reset the time
   clearInterval(timer);
-  document.querySelector("#timer-container > span").textContent="30";
+  document.querySelector("#timer-container > span").textContent = "30";
+  //restar de counter to rotate two cards
 }
 
 //This function will open a pop up window when the timer ended
 function youLose() {
   document.getElementById("lose-pop-up").style.display = "block";
-  winCounter=0;
 }
 /**
  * This funtion restart the ame after you lose the game
@@ -239,11 +260,13 @@ function youLose() {
  */
 document.getElementById("try-again").addEventListener("click", function () {
   document.getElementById("lose-pop-up").style.display = "none";
-  document.querySelector("#timer-container > span").textContent="30";
-  winCounter=0;
+  document.querySelector("#timer-container > span").textContent = "30";
+  cardCounterRotate = 0;
+  winCounter = 0;
   createTable();
   animationCards();
-  timerCountdown();
+  noClick();
+  setTimeout(() => {
+    timerCountdown();
+  }, 3500);
 });
-
-
