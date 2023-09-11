@@ -81,7 +81,6 @@ function animationCards() {
   var cardfront = document.querySelectorAll("div.card-zone");
   for (var i = 0; i < cardfront.length; i++) {
     cardfront[i].classList.add("animation");
-    console.log("hecho");
   }
 }
 
@@ -135,7 +134,6 @@ function turn(element) {
     compareCards(peers, peersParents);
     peers = [];
     peersParents = [];
-    console.log(peers);
   } 
 }
 
@@ -152,7 +150,6 @@ function compareCards(peers, peersParents) {
     var card2 = peers[1];
 
     if (card1 == card2) {
-      console.log("yes son iguales");
       var cardParent1 = peersParents[0].firstElementChild;
       var cardParent2 = peersParents[1].firstElementChild;
       cardParent1.style.backgroundColor = "green";
@@ -164,7 +161,6 @@ function compareCards(peers, peersParents) {
         winScore();
         winCounter = 0;
       }
-      console.log(winCounter);
     } else {
       console.log("noooooo");
       peersParents[0].style.pointerEvents = "all";
