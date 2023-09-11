@@ -110,20 +110,20 @@ function closePopUp() {
 
 let peers = []; //array whit card back face
 let peersParents = []; // array whit card container
-
+ 
 function turn(element) {
   let back = element.firstElementChild.innerHTML;
   element.style.pointerEvents = "none";
   peersParents.push(element);
   peers.push(back);
-  seeCard(element);
+  seeCard(element)
 
   if (peers.length === 2) {
     let body = document.querySelector("body");
     body.style = "pointer-events:none";
     setTimeout(() => {
       body.style = "pointer-events:all";
-    }, 1000);
+    }, 800);
     compareCards(peers, peersParents);
     peers = [];
     peersParents = [];
@@ -220,7 +220,8 @@ document.getElementById("restart-game").addEventListener("click", function () {
 document.getElementById("new-game").addEventListener("click", function () {
   document.getElementById("win-pop-up").style.display = "none";
   document.getElementById("win-pop-up").style.transform = "scale(0.5)";
-  cardCounterRotate = 0;
+  peers = [];//put the glovals arrays to 0;
+  peersParents = [];//put the glovals arrays to 0;
   createTable();
   animationCards();
   noClick();
@@ -259,10 +260,11 @@ function youLose() {
  * because the timer ended
  */
 document.getElementById("try-again").addEventListener("click", function () {
+  winCounter = 0;//put the gloval counter to 0;
+  peers = [];//put the glovals arrays to 0;
+  peersParents = [];//put the glovals arrays to 0;
   document.getElementById("lose-pop-up").style.display = "none";
   document.querySelector("#timer-container > span").textContent = "30";
-  cardCounterRotate = 0;
-  winCounter = 0;
   createTable();
   animationCards();
   noClick();

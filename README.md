@@ -191,9 +191,11 @@ I noticed that this tests scores vary from time to time and depends on external 
 
 
 
-### Unfixed Bugs
+###  Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+* If the player clicks on the cards before they are hidden, the code detects them as correct if they are even.
+
+* If you lose the game and there is a card left, in the next game count that card as turned.
 
 # Deployment
 
