@@ -14,6 +14,22 @@ The application should improve your cognitive skills, short term memory and face
 
 ![Responsice Mockup](./assets/images/responsice%20mokup.png)
 
+## Surface (colors , images and fonts)
+  * ### fonts from Googlefonts
+      * Press Start 2P
+      * Sedwick Ave Display
+
+
+  * ### colors
+    * backgrpund color:chocolate and cadetblue.
+    * titles and name user:chocolate.
+    * buttons: Cadetblue and Red. 
+    * win window title:rgb(167, 226, 77).
+    * others: white, black, rgb(255, 227, 67).
+    
+  * ### images are from.
+    [Canva](https://www.canva.com/es_es/)
+
 ## Features
 
 This game consists of two main features, firstly a game area in which the cards to be matched are found and secondly the points area where you can see the player's defeats and victories
@@ -93,11 +109,11 @@ __You Lose Window__
 
 ### Java Scrpit
 
-- As a css interactive leng for buger menu.
+- As a css interactive leng to created the game area, animations and control the score games.
 
 ### Font Awesome
 
-- As an icon library for a social links.
+- As an icon library for a social links and help button.
 
 ### Google fonts
 
@@ -143,12 +159,24 @@ I used Google Chrome web developer tools and Responsively app for testing and so
 - Nest Hub (1024px - 600px)
 - Macbook Pro (1440px - 900px)
 
+## Performance testing
+
+I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website.
+I had to do couple of changes to improve performance. Screenshots are presented below:
+
+![bug_performance1](./assets/images/preformance.jpg)
+
+### __Final results:__
+
+![performance_final](./assets/images/preformance2.jpg)
+I noticed that this tests scores vary from time to time and depends on external libraries as well. 
+
 ### Validator Testing
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frichard9106.github.io%2Fremember-me-javaScript-essentials%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=+https%3A%2F%2Frichard9106.github.io%2Fremember-me-javaScript-essentials%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=es)
 
 - JavaScript - No errors were found when passing through the official [Jshint validator](https://jshint.com/) 
 
@@ -167,28 +195,47 @@ I used Google Chrome web developer tools and Responsively app for testing and so
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
-## Deployment
+# Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+The project was deployed on GitHub Pages. I used VsCode as a development environment where I commited all changes to git version control system.
+I used push command in VsCode save changes into GitHub.
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows:
-  - In the GitHub repository, navigate to the Settings tab
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+To deploy a project I had to:
 
-The live link can be found here - https://code-institute-org.github.io/love-maths/
+* Log in to GitHub and click on repository to deploy ([remember-me-javaScript-essentials](https://github.com/richard9106/remember-me-javaScript-essentials))
+* select `Settings` and find GitHub Pages section at the very bottom of the page
+* from source select `none` and then `Milestone-Projects` branch.
+* click `save` and page was deployed after auto-refresh.
+>  Your site is published at https://richard9106.github.io/remember-me-javaScript-essentials/
+
+To run localy:
+
+### Firts method
+* Log in to VScode account and link your repository to be open with VScode.
+### Second method
+* Creating a virtual space in gitHub https://github.com/richard9106/remember-me-javaScript-essentials open the repository and then click on CODE green buttom and create a virtual space.
+
+* once it has been created you can open it with VScode directly from your virtual space.
+
 
 ## Credits
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+* To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
-You can break the credits section up into Content and Media, depending on what you have included in your project.
+* Ideas and knowledge library:
+
+    * [w3schools.com](https://www.w3schools.com/js/default.asp)  I used code for JavaScript set interlvar functions.
+
+
+### Images:
+
+* link images page [Canva](https://www.canva.com/)
+* icons from [font Awesome](https://fontawesome.com/icons)
+
 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The rules were created based on a Google search [memory game](https://www.google.com/search?q=memori+game+rules&sca_esv=564283140&sxsrf=AB5stBi7PJto-HcDdMO8q6vetbliEWWQPg%3A1694420047145&source=hp&ei=T8z-ZPHJBqCKkdUP9cmX-AI&iflsig=AD69kcEAAAAAZP7aX-h1ESVfbJ8kWK7u7gAfDm3kbaCl&ved=0ahUKEwixrYjIjqKBAxUgRaQEHfXkBS8Q4dUDCAs&uact=5&oq=memori+game+rules&gs_lp=Egdnd3Mtd2l6IhFtZW1vcmkgZ2FtZSBydWxlczIHEAAYDRiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjjIlDlCFj0IHABeACQAQCYAYABoAGuDqoBBDQuMTO4AQPIAQD4AQGoAgvCAgYQswEYhQTCAhAQLhgDGI8BGOUCGOoCGIwDwgIQEAAYAxiPARjlAhjqAhiMA8ICCxAAGIAEGLEDGIMBwgILEC4YigUYsQMYgwHCAgsQLhiABBixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIIEAAYgAQYsQPCAg4QLhiABBixAxjHARjRA8ICCxAAGIoFGLEDGIMBwgIIEC4YgAQYsQPCAgUQABiABMICCxAuGIAEGMcBGK8BwgIFEC4YgATCAgsQLhiDARixAxiABMICDRAuGK8BGMcBGIAEGArCAg0QLhiABBjHARivARgKwgILEC4YgwEYsQMYigXCAg0QLhiABBixAxiDARgKwgIHEAAYgAQYCsICBxAuGIAEGArCAgcQLhgNGIAEwgIIEAAYFhgeGA_CAggQABgFGB4YDcICChAAGAUYHhgNGA8&sclient=gws-wiz)
 
 ### Media
 
@@ -197,21 +244,8 @@ You can break the credits section up into Content and Media, depending on what y
 
 Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!
 
-## Other General Project Advice
+# Screenshots
 
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work!
+## Project screenshots
 
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write a Git Commit Message
-
-  - Make sure to keep the messages in the imperative mood
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept.
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process!
+![responsiveness Iphones](./assets/images/iphonesAndMac.jpg)
