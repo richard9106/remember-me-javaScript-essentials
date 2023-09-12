@@ -173,6 +173,7 @@ I had to do couple of changes to improve performance. Screenshots are presented 
 ### __Final results:__
 
 ![performance_final](./assets/images/preformance2.jpg)
+
 I noticed that this tests scores vary from time to time and depends on external libraries as well. 
 
 ### Validator Testing
