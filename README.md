@@ -47,7 +47,11 @@ This game consists of two main features, firstly a game area in which the cards 
 - This section will allow the user to play the memory game. The user will be able to easily see cards for 4 seconds and them they have to find each pair possible before the time runs out.
 - The user will be able to give up if they want to.
 
+<center>
+
 ![timer](./assets/images/countdown.jpg)
+
+</center>
 
 **Countdown and Give up button**
 
@@ -244,7 +248,6 @@ To run localy:
 - The photos used on the home and sign up page are from This Open Source site
 - The images used for the gallery page were taken from this other open source site
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!
 
 # Screenshots
 
