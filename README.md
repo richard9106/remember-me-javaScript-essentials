@@ -1,8 +1,25 @@
 # Project 2 JavaScript Essentials
 
-# Remember Meee! Game
+# Remember Mee! Game
 
 Remember mee! is an app that is designed to improve the short-term memory of users, both children and adults, it is a game that consists of a playing area with cards, of which you must find the pair of each card.
+
+![Responsice Mockup](./assets/images/responsice%20mokup.png)
+
+
+- [<span style="color:orange"> External Goals](#external-users-goal)
+- [<span style="color:orange"> Owner's Goal](#site-owners-goal)
+- [<span style="color:orange"> Surface](#surface-colors--images-and-fonts)
+- [<span style="color:orange"> Features](#features)
+- [<span style="color:orange"> Other Features](#others-features)
+- [<span style="color:orange"> Technologies Used](#technologies-used)
+- [<span style="color:orange"> Testing](#testing)
+- [<span style="color:orange"> Preformance](#performance-testing)
+- [<span style="color:orange"> Deployment](#deployment)
+- [<span style="color:orange"> Credits](#credits)
+- [<span style="color:orange"> Screenshots](#screenshots)
+
+
 
 ### External user’s goal:
 
@@ -12,7 +29,7 @@ The application user (Kids) wants to kill time with funny games such as memmory 
 
 The application should improve your cognitive skills, short term memory and facets such as attention, creativity and visual ability.
 
-![Responsice Mockup](./assets/images/responsice%20mokup.png)
+
 
 ## Surface (colors , images and fonts)
   * ### fonts from Googlefonts
@@ -28,7 +45,7 @@ The application should improve your cognitive skills, short term memory and face
     * others: white, black, rgb(255, 227, 67).
     
   * ### images are from.
-    [Canva](https://www.canva.com/es_es/)
+    [<span style="color:Orange; font-size:20px;"> Canva](https://www.canva.com/es_es/)
 
 ## Features
 
@@ -145,7 +162,7 @@ __You Lose Window__
 
 I used Google Chrome web developer tools and Responsively app for testing and solving problems with responsiveness and style issues.
 
-[Responsively App](https://responsively.app/) was very helpful the diferent screen sizes are listed below:
+[<span style="color:orange">Responsively App](https://responsively.app/) was very helpful the diferent screen sizes are listed below:
 
 ### Cell phones
 
@@ -165,7 +182,7 @@ I used Google Chrome web developer tools and Responsively app for testing and so
 
 ## Performance testing
 
-I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website.
+I run [<span style="color:orange">Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website.
 I had to do couple of changes to improve performance. Screenshots are presented below:
 
 ![bug_performance1](./assets/images/preformance.jpg)
@@ -179,11 +196,11 @@ I noticed that this tests scores vary from time to time and depends on external 
 ### Validator Testing
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frichard9106.github.io%2Fremember-me-javaScript-essentials%2F)
+  - No errors were returned when passing through the official [<span style="color:orange">W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Frichard9106.github.io%2Fremember-me-javaScript-essentials%2F)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=+https%3A%2F%2Frichard9106.github.io%2Fremember-me-javaScript-essentials%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=es)
+  - No errors were found when passing through the official [<span style="color:orange">(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=+https%3A%2F%2Frichard9106.github.io%2Fremember-me-javaScript-essentials%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=es)
 
-- JavaScript - No errors were found when passing through the official [Jshint validator](https://jshint.com/) 
+- JavaScript - No errors were found when passing through the official [<span style="color:orange">Jshint validator](https://jshint.com/) 
 
    __Metrics__
     -  There are 21 functions in this file.
@@ -209,7 +226,7 @@ I used push command in VsCode save changes into GitHub.
 
 To deploy a project I had to:
 
-* Log in to GitHub and click on repository to deploy ([remember-me-javaScript-essentials](https://github.com/richard9106/remember-me-javaScript-essentials))
+* Log in to GitHub and click on repository to deploy ([<span style="color:orange">remember-me-javaScript-essentials](https://github.com/richard9106/remember-me-javaScript-essentials))
 * select `Settings` and find GitHub Pages section at the very bottom of the page
 * from source select `none` and then `Milestone-Projects` branch.
 * click `save` and page was deployed after auto-refresh.
@@ -227,22 +244,22 @@ To run localy:
 
 ## Credits
 
-* To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+* To complete this project I used Code Institute student template: [<span style="color:orange">gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 * Ideas and knowledge library:
 
-    * [w3schools.com](https://www.w3schools.com/js/default.asp)  I used code for JavaScript set interlvar functions.
+    * [<span style="color:orange">w3schools.com](https://www.w3schools.com/js/default.asp)  I used code for JavaScript set interlvar functions.
 
 
 ### Images:
 
-* link images page [Canva](https://www.canva.com/)
-* icons from [font Awesome](https://fontawesome.com/icons)
+* link images page [<span style="color:orange">Canva](https://www.canva.com/)
+* icons from [<span style="color:orange">font Awesome](https://fontawesome.com/icons)
 
 
 ### Content
 
-- The rules were created based on a Google search [memory game](https://www.google.com/search?q=memori+game+rules&sca_esv=564283140&sxsrf=AB5stBi7PJto-HcDdMO8q6vetbliEWWQPg%3A1694420047145&source=hp&ei=T8z-ZPHJBqCKkdUP9cmX-AI&iflsig=AD69kcEAAAAAZP7aX-h1ESVfbJ8kWK7u7gAfDm3kbaCl&ved=0ahUKEwixrYjIjqKBAxUgRaQEHfXkBS8Q4dUDCAs&uact=5&oq=memori+game+rules&gs_lp=Egdnd3Mtd2l6IhFtZW1vcmkgZ2FtZSBydWxlczIHEAAYDRiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjjIlDlCFj0IHABeACQAQCYAYABoAGuDqoBBDQuMTO4AQPIAQD4AQGoAgvCAgYQswEYhQTCAhAQLhgDGI8BGOUCGOoCGIwDwgIQEAAYAxiPARjlAhjqAhiMA8ICCxAAGIAEGLEDGIMBwgILEC4YigUYsQMYgwHCAgsQLhiABBixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIIEAAYgAQYsQPCAg4QLhiABBixAxjHARjRA8ICCxAAGIoFGLEDGIMBwgIIEC4YgAQYsQPCAgUQABiABMICCxAuGIAEGMcBGK8BwgIFEC4YgATCAgsQLhiDARixAxiABMICDRAuGK8BGMcBGIAEGArCAg0QLhiABBjHARivARgKwgILEC4YgwEYsQMYigXCAg0QLhiABBixAxiDARgKwgIHEAAYgAQYCsICBxAuGIAEGArCAgcQLhgNGIAEwgIIEAAYFhgeGA_CAggQABgFGB4YDcICChAAGAUYHhgNGA8&sclient=gws-wiz)
+- The rules were created based on a Google search [<span style="color:orange">memory game](https://www.google.com/search?q=memori+game+rules&sca_esv=564283140&sxsrf=AB5stBi7PJto-HcDdMO8q6vetbliEWWQPg%3A1694420047145&source=hp&ei=T8z-ZPHJBqCKkdUP9cmX-AI&iflsig=AD69kcEAAAAAZP7aX-h1ESVfbJ8kWK7u7gAfDm3kbaCl&ved=0ahUKEwixrYjIjqKBAxUgRaQEHfXkBS8Q4dUDCAs&uact=5&oq=memori+game+rules&gs_lp=Egdnd3Mtd2l6IhFtZW1vcmkgZ2FtZSBydWxlczIHEAAYDRiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjjIlDlCFj0IHABeACQAQCYAYABoAGuDqoBBDQuMTO4AQPIAQD4AQGoAgvCAgYQswEYhQTCAhAQLhgDGI8BGOUCGOoCGIwDwgIQEAAYAxiPARjlAhjqAhiMA8ICCxAAGIAEGLEDGIMBwgILEC4YigUYsQMYgwHCAgsQLhiABBixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIIEAAYgAQYsQPCAg4QLhiABBixAxjHARjRA8ICCxAAGIoFGLEDGIMBwgIIEC4YgAQYsQPCAgUQABiABMICCxAuGIAEGMcBGK8BwgIFEC4YgATCAgsQLhiDARixAxiABMICDRAuGK8BGMcBGIAEGArCAg0QLhiABBjHARivARgKwgILEC4YgwEYsQMYigXCAg0QLhiABBixAxiDARgKwgIHEAAYgAQYCsICBxAuGIAEGArCAgcQLhgNGIAEwgIIEAAYFhgeGA_CAggQABgFGB4YDcICChAAGAUYHhgNGA8&sclient=gws-wiz)
 
 ### Media
 
