@@ -265,6 +265,7 @@ document.getElementById("try-again").addEventListener("click", function () {
   peersParents = [];//put the glovals arrays to 0;
   document.getElementById("lose-pop-up").style.display = "none";
   document.querySelector("#timer-container > span").textContent = "30";
+  clearInterval(timer);
   createTable();
   animationCards();
   noClick();
@@ -272,3 +273,19 @@ document.getElementById("try-again").addEventListener("click", function () {
     timerCountdown();
   }, 3500);
 });
+
+/**
+ * This function will hide or show the 
+ * help information to the user
+ */
+
+document.getElementById("help-button").addEventListener("click", function(){
+  let helpText=document.getElementById("help-text");
+  helpText.style.opacity="1";
+  helpText.style.display="block";
+  setTimeout(()=>{
+    helpText.style.opacity="0";
+    helpText.style.display="none";
+  },3000)
+
+})

@@ -191,7 +191,7 @@ I noticed that this tests scores vary from time to time and depends on external 
 
 
 
-###  Bugs
+###  Bugs (all the bugs are fixed)
 
 * If the player clicks on the cards before they are hidden, the code detects them as correct if they are even.
 
