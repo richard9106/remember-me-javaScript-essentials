@@ -448,6 +448,7 @@ footer {
 }
 
 #help-text{
+  background-color: rgb(210, 105, 30);
   display: none;
   opacity: 0;
   position: absolute;
@@ -455,7 +456,7 @@ footer {
   width: 150px;
   top: -100px;
   left: 40px;
-  background-color: rgb(255, 255, 255);
+  color:white;
   border-radius: 10px 30px 40px 0 ;
   animation: hideText 1.5s;
 }
